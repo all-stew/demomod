@@ -1,6 +1,3 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "demo_mod:item/ruby"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e50bb52ac7854cf9a92393278e79f5595eeb3aa37a84336ec9fa66376665a2ec
+size 99
