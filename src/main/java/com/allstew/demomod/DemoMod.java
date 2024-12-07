@@ -1,5 +1,6 @@
 package com.allstew.demomod;
 
+import com.allstew.demomod.item.ModCreativeTab;
 import com.allstew.demomod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
@@ -15,12 +16,12 @@ public class DemoMod {
 
     public static final String MOD_ID = "demo_mod";
 
-
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public DemoMod(IEventBus modEventBus) {
         modEventBus.addListener(this::commonSetup);
         ModItems.register(modEventBus);
+        ModCreativeTab.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
     }
 
