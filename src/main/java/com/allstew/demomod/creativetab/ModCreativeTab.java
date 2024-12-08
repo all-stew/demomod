@@ -1,6 +1,7 @@
-package com.allstew.demomod.item;
+package com.allstew.demomod.creativetab;
 
 import com.allstew.demomod.DemoMod;
+import com.allstew.demomod.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,7 +17,7 @@ public class ModCreativeTab {
         DemoMod.MOD_ID
     );
 
-    private static final String DEMO_MOD_TAB_KEY = "creativetab." + DemoMod.MOD_ID;
+    private static final String DEMO_MOD_TAB_KEY = "creative_tab." + DemoMod.MOD_ID;
 
     private static final DeferredHolder<CreativeModeTab, CreativeModeTab> DEMO_MOD_TAB = CREATIVE_MODE_TABS.register(
         "demo_mod_tab",
