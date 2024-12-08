@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b11d2f163406bc5927ae083571eacf8ccab5c5b475d98b09ed98e109fdf28b44
-size 93
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "demo_mod:block/ruby_block"
+  }
+}

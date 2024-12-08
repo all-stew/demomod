@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c8f9fa633034adfee678ccf27babffbec18eceb66c57a1ef44e5dae0c8ac041
-size 119
+{
+  "item.demo_mod.ruby": "Ruby",
+  "creative_tab.demo_mod": "Demo Mod",
+  "block.demo_mod.ruby_block": "Ruby Block"
+}

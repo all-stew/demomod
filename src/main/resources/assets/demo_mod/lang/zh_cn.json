@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03ba14fe873568637f8cc84d3ceb1a6090263b3c81d347142380ef3a3e21bcec
-size 126
+{
+  "item.demo_mod.ruby": "红宝石",
+  "creative_tab.demo_mod": "Demo Mod",
+  "block.demo_mod.ruby_block": "红宝石块"
+}
