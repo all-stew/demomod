@@ -1,6 +1,8 @@
 package com.allstew.demomod.data.provider;
 
 import com.allstew.demomod.DemoMod;
+import com.allstew.demomod.block.ModBlocks;
+import com.allstew.demomod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 
@@ -12,9 +14,9 @@ public class EnglishLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        this.add("item.demo_mod.ruby", "Ruby");
         this.add("creative_tab.demo_mod", "Demo Mod");
-        this.add("block.demo_mod.ruby_block", "Ruby Block");
+        this.add(ModItems.RUBY_ITEM.get(), "Ruby");
+        this.add(ModBlocks.RUBY_BLOCK.get(), "Ruby Block");
     }
 }
 

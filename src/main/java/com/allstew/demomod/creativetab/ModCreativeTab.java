@@ -1,6 +1,7 @@
 package com.allstew.demomod.creativetab;
 
 import com.allstew.demomod.DemoMod;
+import com.allstew.demomod.block.ModBlocks;
 import com.allstew.demomod.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -26,6 +27,7 @@ public class ModCreativeTab {
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> ModItems.RUBY_ITEM.get().getDefaultInstance()).displayItems((parameters, output) -> {
                 output.accept(ModItems.RUBY_ITEM.get());
+                output.accept(ModBlocks.RUBY_BLOCK.get());
             })
             .build());
 
