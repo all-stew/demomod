@@ -2,6 +2,7 @@ package com.allstew.demomod;
 
 import com.allstew.demomod.block.ModBlocks;
 import com.allstew.demomod.creativetab.ModCreativeTab;
+import com.allstew.demomod.data.DataGather;
 import com.allstew.demomod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
@@ -25,6 +26,7 @@ public class DemoMod {
         ModItems.register(modEventBus);
         ModCreativeTab.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
+        modEventBus.addListener(DataGather::onGatherData);
     }
 
 
