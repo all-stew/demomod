@@ -17,5 +17,6 @@ public class ChineseLanguageProvider extends LanguageProvider {
         this.add("creative_tab.demo_mod", "Demo Mod");
         this.add(ModItems.RUBY_ITEM.get(), "红宝石");
         this.add(ModBlocks.RUBY_BLOCK.get(), "红宝石块");
+        this.add(ModBlocks.LAMP_BLOCK.get(), "灯");
     }
 }

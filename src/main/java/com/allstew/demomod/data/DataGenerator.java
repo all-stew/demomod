@@ -6,7 +6,7 @@ import com.allstew.demomod.data.provider.ModelProvider;
 import com.allstew.demomod.data.provider.StateProvider;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
-public class DataGather {
+public class DataGenerator {
 
     public static void onGatherData(GatherDataEvent event) {
         var gen = event.getGenerator();
