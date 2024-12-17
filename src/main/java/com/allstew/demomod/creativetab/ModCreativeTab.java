@@ -28,6 +28,7 @@ public class ModCreativeTab {
             .icon(() -> ModItems.RUBY_ITEM.get().getDefaultInstance()).displayItems((parameters, output) -> {
                 output.accept(ModItems.RUBY_ITEM.get());
                 output.accept(ModBlocks.RUBY_BLOCK.get());
+                output.accept(ModBlocks.LAMP_BLOCK.get());
             })
             .build());
 
