@@ -16,6 +16,7 @@ public class EnglishLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         this.add("creative_tab.demo_mod", "Demo Mod");
         this.add(ModItems.RUBY_ITEM.get(), "Ruby");
+        this.add(ModItems.MAGIC_INGOT_ITEM.get(), "Magic Ingot");
         this.add(ModBlocks.RUBY_BLOCK.get(), "Ruby Block");
         this.add(ModBlocks.LAMP_BLOCK.get(), "Lamp");
     }
