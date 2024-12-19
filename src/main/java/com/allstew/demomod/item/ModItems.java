@@ -16,16 +16,21 @@ public class ModItems {
     public static final DeferredItem<Item> RUBY_ITEM;
     public static final DeferredItem<BlockItem> RUBY_BLOCK_ITEM;
     public static final DeferredItem<BlockItem> LAMP_BLOCK_ITEM;
+    public static final DeferredItem<Item> MAGIC_INGOT_ITEM;
 
     static {
-        RUBY_ITEM       = ITEMS.registerSimpleItem(ItemIds.RUBY_ID);
-        RUBY_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(
+        RUBY_ITEM        = ITEMS.registerSimpleItem(ItemIds.RUBY_ID);
+        RUBY_BLOCK_ITEM  = ITEMS.registerSimpleBlockItem(
             BlockIds.RUBY_BLOCK_ID,
             ModBlocks.RUBY_BLOCK
         );
-        LAMP_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(
+        LAMP_BLOCK_ITEM  = ITEMS.registerSimpleBlockItem(
             BlockIds.LAMP_BLOCK_ID,
             ModBlocks.LAMP_BLOCK
+        );
+        MAGIC_INGOT_ITEM = ITEMS.registerSimpleItem(
+            ItemIds.MAGIC_INGOT_ID,
+            new Item.Properties()
         );
     }
 

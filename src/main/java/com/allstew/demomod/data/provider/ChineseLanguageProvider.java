@@ -18,5 +18,6 @@ public class ChineseLanguageProvider extends LanguageProvider {
         this.add(ModItems.RUBY_ITEM.get(), "红宝石");
         this.add(ModBlocks.RUBY_BLOCK.get(), "红宝石块");
         this.add(ModBlocks.LAMP_BLOCK.get(), "灯");
+        this.add(ModItems.MAGIC_INGOT_ITEM.get(), "魔法锭");
     }
 }
