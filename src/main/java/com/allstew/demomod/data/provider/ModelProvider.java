@@ -23,12 +23,17 @@ public class ModelProvider extends ItemModelProvider {
             ResourceLocation.fromNamespaceAndPath(DemoMod.MOD_ID, "item/" + ItemIds.RUBY_ID)
         );
         this.singleTexture(
+            ItemIds.RUBY_APPLE_ID,
+            ResourceLocation.withDefaultNamespace("item/generated"),
+            "layer0",
+            ResourceLocation.fromNamespaceAndPath(DemoMod.MOD_ID, "item/" + ItemIds.RUBY_APPLE_ID)
+        );
+        this.singleTexture(
                 ItemIds.MAGIC_INGOT_ID, ResourceLocation.withDefaultNamespace("item/generated"), "layer0",
                 ResourceLocation.withDefaultNamespace("item/iron_ingot")
             ).override()
             .predicate(ResourceLocation.fromNamespaceAndPath(DemoMod.MOD_ID, "size"), 16)
-            .model(new ModelFile.ExistingModelFile(ResourceLocation.withDefaultNamespace("item/gold_ingot"),
-                this.existingFileHelper))
+            .model(new ModelFile.UncheckedModelFile("item/gold_ingot"))
             .end();
     }
 }
