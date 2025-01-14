@@ -29,6 +29,12 @@ public class ModelProvider extends ItemModelProvider {
             ResourceLocation.fromNamespaceAndPath(DemoMod.MOD_ID, "item/" + ItemIds.RUBY_APPLE_ID)
         );
         this.singleTexture(
+            ItemIds.RUBY_SWORD_ID,
+            ResourceLocation.withDefaultNamespace("item/generated"),
+            "layer0",
+            ResourceLocation.fromNamespaceAndPath(DemoMod.MOD_ID, "item/" + ItemIds.RUBY_SWORD_ID)
+        );
+        this.singleTexture(
                 ItemIds.MAGIC_INGOT_ID, ResourceLocation.withDefaultNamespace("item/generated"), "layer0",
                 ResourceLocation.withDefaultNamespace("item/iron_ingot")
             ).override()

@@ -4,6 +4,7 @@ import com.allstew.demomod.DemoMod;
 import com.allstew.demomod.block.BlockIds;
 import com.allstew.demomod.block.ModBlocks;
 import com.allstew.demomod.item.custom.RubyApple;
+import com.allstew.demomod.item.custom.RubySword;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -19,6 +20,7 @@ public class ModItems {
     public static final DeferredItem<BlockItem> LAMP_BLOCK_ITEM;
     public static final DeferredItem<Item> MAGIC_INGOT_ITEM;
     public static final DeferredItem<Item> RUBY_APPLE_ITEM;
+    public static final DeferredItem<Item> RUBY_SWORD_ITEM;
 
     static {
         RUBY_ITEM        = ITEMS.registerSimpleItem(ItemIds.RUBY_ID);
@@ -37,6 +39,10 @@ public class ModItems {
         RUBY_APPLE_ITEM = ITEMS.register(
             ItemIds.RUBY_APPLE_ID,
             RubyApple::new
+        );
+        RUBY_SWORD_ITEM = ITEMS.register(
+            ItemIds.RUBY_SWORD_ID,
+            RubySword::new
         );
     }
 
